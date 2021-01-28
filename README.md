@@ -1,0 +1,5 @@
+# WEB_Semantique-
+Cette repository contient :
+-LES EXAMS DU WEB SEMANTIQUE
+-LES ATELIERS 
+-LES CORRIGÉS DES ATELIERS
