@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<owl:Class rdf:ID="Client" />
+<owl:Class rdf:ID="Produit" />
+
+<owl:Class rdf:ID="TV">
+	<rdfs:subClassOf rdf:resource="Produit" />
+</owl:Class>
+
+<owl:Class rdf:ID="Ordinateur">
+	<rdfs:subClassOf rdf:resource="Produit" />
+</owl:Class>
+
+<owl:Class rdf:ID="Tablette">
+	<rdfs:subClassOf rdf:resource="Produit" />
+</owl:Class>
+
+<owl:Class rdf:ID="Smartphone">
+	<rdfs:subClassOf rdf:resource="Produit" />
+</owl:Class>
+
+<owl:Class rdf:ID="Vêtement">
+	<rdfs:subClassOf rdf:resource="Produit" />
+</owl:Class>
+
+<owl:Class rdf:ID="Livre">
+	<rdfs:subClassOf rdf:resource="Produit" />
+</owl:Class>
+
+<owl:Class rdf:ID="ProduitElectromenager">
+	<owl:equivalentClass>
+		<owl:Class>
+			<owl:unionOf rdf:parseType="Collection">
+				<owl:Class rdf:about="TV"/>
+				<owl:Class rdf:about="Ordinateur"/>
+				<owl:Class rdf:about="Tablette"/>
+				<owl:Class rdf:about="Smartphone"/>
+			</owl:unionOf>
+		</owl:Class>
+	</owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="Produit">
+	<owl:disjointUnionOf rdf:parseType="Collection">
+		<owl:Class rdf:about="ProduitElectromenager"/>
+		<owl:Class rdf:about="Vêtement"/>
+		<owl:Class rdf:about="Livre"/>
+	</owl:disjointUnionOf>
+</owl:Class>
+
+<owl:ObjectProperty rdf:ID="achète">
+	<rdfs:domain rdf:resource="Client" />
+	<rdfs:range rdf:resource="Produit" />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:ID="Produit Similaire">
+	<rdf:type rdf:resource="&owl;SymmetricProperty" />
+	<rdfs:domain rdf:resource="Produit" />
+	<rdfs:range rdf:resource="Produit" />
+</owl:ObjectProperty>
+<!-- <owl:SymmetricProperty rdf:ID="Produit Similaire" />-->

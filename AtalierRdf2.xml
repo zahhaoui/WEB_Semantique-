@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:ag="http://dbpedia.org/agence" xmlns:vt="http://dbpedia.org/voiture"> 
+
+	<rdf:Description rdf:about="http://dbpedia.org/resource/ATIMAVoyage"> 
+		<ag:possede>
+			<rdf:Bag> 
+				<rdf:Description rdf:about="http://dbpedia.org/Mercedes"> 
+					<vt:moteurtype>moteur 2.6 DL</vt:moteurtype>
+					<vt:climatisationtype>climatisation centrale</vt:climatisationtype>
+					<vt:fermeturtype>fermeture automatique</vt:fermeturtype>
+					<vt:vitretype>vitres électriques avant et arrière</vt:vitretype>
+				</rdf:Description>
+				
+				<rdf:Description rdf:about="http://dbpedia.org/Peugeot 307"> 
+					<vt:moteurtype>moteur 1.5 DL</vt:moteurtype>
+					<vt:climatisationtype>climatisation centralisé</vt:climatisationtype>
+					
+					<vt:vitretype>vitres électriques avant</vt:vitretype>
+				</rdf:Description>
+				
+				<rdf:Description rdf:about="http://dbpedia.org/Logan"> 
+					<vt:moteurtype>moteur 1.4 DL</vt:moteurtype>
+					
+					<vt:fermeturtype>fermeture  manuelles</vt:fermeturtype>
+					<vt:vitretype>vitres  manuelles</vt:vitretype>
+				</rdf:Description>
+			</rdf:Bag>
+		</ag:possede>
+ 
+	</rdf:Description> 
+
+</RDF> 
